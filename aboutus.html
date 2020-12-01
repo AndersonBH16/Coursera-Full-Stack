@@ -9,41 +9,26 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        .row-header{
-            margin: 0px auto;
-            padding: 0px auto;;
-        }
-
-        .row-content {
-            margin: 0px auto;
-            padding: 50px 0px 50px 0px;
-            border-bottom: 1px ridge;
-            min-height: 400px;
-        }
-
-        .footer{
-            background-color: #D1C4E9;
-            margin: 0px auto;
-            padding: 20px 0px 20px 0px;
-        }
-
-        .jumbotron{
-            padding: 70px 30px 70px 30px;
-            margin: 0px auto;
-            background: #9575CD;
-            color: floralwhite;
-        }
-
-        .address{
-            font-size: 80%;
-            margin: 0px;
-            color: #0f0f0f;
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button"  data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mr-auto" href="#">Ristorante con Fusion</a>
+            <div id="Navbar" class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="./aboutus.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>            
+        </div>
+    </nav>
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -59,7 +44,11 @@
 
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-md-12">
+            <ol class="col-12 breadcrumb">
+                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                <li class="breadcrumb-item active"><a>About us</a></li>
+            </ol>
+            <div class="col-md-12">                
                <h3>About Us</h3>
                <hr>
             </div>
@@ -98,7 +87,7 @@
                 <div class="col-4 offset-1 col-sm-2">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="./index.html">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Menu</a></li>
                         <li><a href="#">Contact</a></li>
